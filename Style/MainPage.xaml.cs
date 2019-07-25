@@ -25,6 +25,27 @@ namespace Style
         public MainPage()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(DonutPage));
+        }
+
+        private void DonutButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(DonutPage));
+        }
+
+        private void CoffeeButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(CoffeePage));
+        }
+
+        private void ScheduleButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(SchedulePage));
+        }
+
+        private void CompleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(CompletePage));
         }
     }
 }
