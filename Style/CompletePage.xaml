@@ -19,8 +19,8 @@
         <Image Grid.Row="1" Source="Assets/ticket.jpg" Width="300" VerticalAlignment="Center" HorizontalAlignment="Center" />
 
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock Text="Order" FontSize="36" HorizontalAlignment="Center" />
-            <TextBlock Text="96" FontSize="64" VerticalAlignment="Center" />
+            <TextBlock Text="Order" FontSize="36"  />
+            <TextBlock Text="96" FontSize="64"  />
         </StackPanel>
 
     </Grid>
