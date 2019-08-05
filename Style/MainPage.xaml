@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    RequestedTheme="Dark"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
         <ResourceDictionary>
@@ -79,7 +80,7 @@
                 <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
             <Frame Name="MyFrame"></Frame>
-            <Image Source="Assets/background.jpg" Grid.Column="1" Stretch="UniformToFill" />
+            <Image Source="Assets/background.jpg" Grid.Column="1" Stretch="Fill" />
         </Grid>
 
 

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -35,13 +36,32 @@ namespace Style
             var selected = (MenuFlyoutItem)sender;
             _roast = selected.Text;
             displayResult();
+
         }
+
+        private void Button_PointerEntered_1(Object sender, PointerRoutedEventArgs e)
+
+        {
+            //Button b = sender as Button;
+            //b.Foreground = new SolidColorBrush(Color.FromArgb(255, 0, 0, 255));
+        }
+
+        private void Button_PointerExited_1(Object sender, PointerRoutedEventArgs e)
+        {
+            //Button b = sender as Button;
+            //b.Foreground = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 255, 255, 255));
+
+
+        }
+
+
 
         private void Sweetener_Click(object sender, RoutedEventArgs e)
         {
             var selected = (MenuFlyoutItem)sender;
             _sweetener = selected.Text;
             displayResult();
+
 
         }
 

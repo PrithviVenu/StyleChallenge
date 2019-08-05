@@ -12,7 +12,9 @@
         <Style TargetType="Button" x:Key="FlyoutButtonStyle">
             <Setter Property="Margin" Value="10" />
             <Setter Property="Foreground" Value="White" />
+
         </Style>
+
     </Page.Resources>
 
     <Grid Background="#3C1F19">
@@ -29,7 +31,12 @@
                     HorizontalAlignment="Center">
 
             <Button Content="Roast" 
+                     PointerEntered="Button_PointerEntered_1" 
+                PointerExited="Button_PointerExited_1"
                     Style="{StaticResource FlyoutButtonStyle}">
+                <Button.Resources>
+                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Red"/>
+                </Button.Resources>
                 <Button.Flyout>
                     <MenuFlyout>
                         <MenuFlyoutItem Text="None" Click="Roast_Click" />
@@ -40,8 +47,14 @@
             </Button>
 
             <Button Content="Sweetener" 
+                PointerEntered="Button_PointerEntered_1" 
+                PointerExited="Button_PointerExited_1"
                     Style="{StaticResource FlyoutButtonStyle}">
+                <Button.Resources>
+                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Red"/>
+                </Button.Resources>
                 <Button.Flyout>
+
                     <MenuFlyout>
                         <MenuFlyoutItem Text="None" Click="Sweetener_Click" />
                         <MenuFlyoutItem Text="Sugar" Click="Sweetener_Click" />
@@ -50,7 +63,13 @@
             </Button>
 
             <Button Content="Cream" 
+                    
+                PointerEntered="Button_PointerEntered_1" 
+                PointerExited="Button_PointerExited_1"
                     Style="{StaticResource FlyoutButtonStyle}">
+                <Button.Resources>
+                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Red"/>
+                </Button.Resources>
                 <Button.Flyout>
                     <MenuFlyout>
                         <MenuFlyoutItem Text="None" Click="Cream_Click" />
